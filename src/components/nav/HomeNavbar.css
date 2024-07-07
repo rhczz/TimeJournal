@@ -1,0 +1,50 @@
+.home-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* 透明背景 */
+    height: 60px; /* 导航栏高度 */
+    box-shadow: none; /* 移除阴影效果 */
+    border-bottom: none; /* 移除底部边框 */
+    padding: 0 20px; /* 内边距 */
+    margin-top: 24px;
+  }
+  
+  .home-navbar .ant-menu {
+    background-color: transparent;
+    border-bottom: none; /* 移除底部边框 */
+    font-size: 18px;
+  }
+  
+  .home-navbar .ant-menu-item {
+    margin: 0 10px;
+    padding: 0;
+    transition: all 0.3s ease-in-out; /* 添加动画效果 */
+  }
+  
+  .home-navbar .ant-menu-item:hover {
+    transform: translateY(-5px); /* 鼠标悬停时向上移动 5px */
+    color: #1890ff; /* 悬停时修改文字颜色 */
+  }
+  
+  .home-navbar .ant-menu-item-selected {
+    color: #1890ff; /* 选中项的文字颜色 */
+    border-bottom: none; /* 移除选中项的底部边框 */
+  }
+  
+  .home-navbar .ant-menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+  
+  .home-navbar .ant-menu-item:hover::after,
+  .home-navbar .ant-menu-item-selected::after {
+    background-color: #1890ff; /* 悬停和选中时的底部边框颜色 */
+  }
+  

@@ -1,0 +1,25 @@
+.image-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: flex-start; /* 垂直居上 */
+    background-image: url('./static/background.jpg'); /* 背景图片的 URL */
+    background-size: cover; /* 背景图片铺满容器 */
+    background-position: center; /* 居中显示背景图片 */
+    height: 100vh; /* 设置高度为视口高度，让背景图片充满整个屏幕 */
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4%;
+  }
+  
+  .logo-img {
+    width: 200px; /* 图片宽度 */
+    height: auto; /* 高度自适应 */
+    border-radius: 20%; /* 圆角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  }
+  
